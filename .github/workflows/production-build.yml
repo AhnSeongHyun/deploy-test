@@ -3,7 +3,7 @@ name: CD(production-build)
 on:
   push:
     tags:
-      - 1.*.*.*
+      - *.*.*.*(
 # release:
 #    types: [published]
 
