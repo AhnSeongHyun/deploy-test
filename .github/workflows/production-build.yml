@@ -1,8 +1,11 @@
 name: CD(production-build)
 
 on:
- release:
-    types: [published]
+  push:
+    tags:
+      - 1.*.**
+# release:
+#    types: [published]
 
 jobs:
   build:
