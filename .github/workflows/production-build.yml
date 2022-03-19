@@ -1,0 +1,15 @@
+name: CD(production-build)
+
+on:
+ release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get the version from Tag
+        id: get_version
+        run: echo "release"
